@@ -21,8 +21,10 @@ final class ApiService {
                 return
             }
             do {
-                let equipmentLossesDto = try JSONDecoder().decode([EquipmentModelDto].self, from: data)
-                completionHandler(.success(equipmentLossesDto))
+                let jsonDecoder = JSONDecoder()
+                jsonDecoder.allowsJSON5 = true
+                let equipmentLossesDtos = try jsonDecoder.decode([EquipmentModelDto].self, from: data)
+                completionHandler(.success(equipmentLossesDtos))
             } catch {
                 completionHandler(.failure(error))
             }
@@ -48,5 +50,19 @@ final class ApiService {
     }
 }
 
+    
+
 struct MyError: Error {
 }
+
+//func customParse(json: Data) -> EquipmentModelDto? {
+//
+//    JSONDecoder().decode(<#T##type: Decodable.Protocol##Decodable.Protocol#>, from: <#T##Data#>)
+////    let json = JSONSerialization.jsonObject(with: json, options: .init())
+////    guard let id = json["miliataryAuto"] (можно ли сюда через запятую прописать все пункты с NaN) as? Int else {
+////        print("Couldn't convert miliataryAuto to an Int")
+////        return nil
+////    }
+////    // TODO: parse the rest of the JSON...
+////    return EquipmentModelDto(miliataryAuto: miliataryAuto)
+//}
