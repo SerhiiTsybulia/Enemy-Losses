@@ -17,17 +17,23 @@ struct EquipmentModelDto: Codable {
     let day, aircraft, helicopter, tank: Int
     let apc, fieldArtillery, mrl, militaryAuto: Int
     let fuelTank, drone, navalShip, antiAircraftWarfare: Int
+    let specialEquipment, mobileSRBMSystem, vehiclesAndFuelTanks, cruiseMissiles: Int
+
 
     enum CodingKeys: String, CodingKey {
-        case date, day, aircraft, helicopter, tank
-        case apc = "APC"
-        case fieldArtillery = "field artillery"
-        case mrl = "MRL"
-        case militaryAuto = "military auto"
-        case fuelTank = "fuel tank"
-        case drone
-        case navalShip = "naval ship"
-        case antiAircraftWarfare = "anti-aircraft warfare"
+            case date, day, aircraft, helicopter, tank
+            case apc = "APC"
+            case fieldArtillery = "field artillery"
+            case mrl = "MRL"
+            case militaryAuto = "military auto"
+            case fuelTank = "fuel tank"
+            case drone
+            case navalShip = "naval ship"
+            case antiAircraftWarfare = "anti-aircraft warfare"
+            case specialEquipment = "special equipment"
+            case mobileSRBMSystem = "mobile SRBM system"
+            case vehiclesAndFuelTanks = "vehicles and fuel tanks"
+            case cruiseMissiles = "cruise missiles"
     }
 }
 
@@ -36,12 +42,12 @@ struct EquipmentModelDto: Codable {
 struct PersonnelModelDto: Codable {
     let date: String
     let day, personnel: Int
-    let welcomePersonnel: String
+    let optionalPersonnel: String
     let pow: Int
 
     enum CodingKeys: String, CodingKey {
         case date, day, personnel
-        case welcomePersonnel = "personnel*"
+        case optionalPersonnel = "personnel*"
         case pow = "POW"
     }
 }
