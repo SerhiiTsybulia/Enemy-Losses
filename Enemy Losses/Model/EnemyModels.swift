@@ -54,7 +54,7 @@ struct EquipmentModelDto: Codable{
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd"
             let realDate = dateFormatter.date(from: date)
-            print(realDate)
+//            print(realDate)
             day = Self.tryParseInt(container, key: .day) ?? -1
             aircraft = Self.tryParseInt(container, key: .aircraft)
             helicopter = Self.tryParseInt(container, key: .helicopter)
@@ -101,4 +101,12 @@ struct PersonnelModelDto: Codable {
         case optionalPersonnel = "personnel*"
         case pow = "POW"
     }
+}
+
+// MARK: - DayLossesModel
+
+struct DayLossesModel {
+    let date: Date
+    let personal: PersonnelModelDto?
+    let equipment: EquipmentModelDto?
 }

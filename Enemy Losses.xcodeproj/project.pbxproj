@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		041E3F132874B7F3001F53EC /* EnemyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E3F122874B7F3001F53EC /* EnemyModels.swift */; };
 		041E3F162874C04D001F53EC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E3F152874C04D001F53EC /* ApiService.swift */; };
+		041E3F192879FFA7001F53EC /* EnemyLossesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E3F172879FFA7001F53EC /* EnemyLossesCell.swift */; };
+		041E3F1A2879FFA7001F53EC /* EnemyLossesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E3F182879FFA7001F53EC /* EnemyLossesCell.xib */; };
+		041E3F1F287A0C44001F53EC /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E3F1E287A0C44001F53EC /* Header.swift */; };
+		041E3F23287A0CC7001F53EC /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041E3F22287A0CC7001F53EC /* Header.xib */; };
+		041E3F26287B13BD001F53EC /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 041E3F25287B13BC001F53EC /* DS-DIGI.TTF */; };
 		04624F4A2874B29B001F1B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04624F492874B29B001F1B5C /* AppDelegate.swift */; };
 		04624F4C2874B29B001F1B5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04624F4B2874B29B001F1B5C /* SceneDelegate.swift */; };
 		04624F4E2874B29B001F1B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04624F4D2874B29B001F1B5C /* ViewController.swift */; };
@@ -20,6 +25,12 @@
 /* Begin PBXFileReference section */
 		041E3F122874B7F3001F53EC /* EnemyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyModels.swift; sourceTree = "<group>"; };
 		041E3F152874C04D001F53EC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		041E3F172879FFA7001F53EC /* EnemyLossesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyLossesCell.swift; sourceTree = "<group>"; };
+		041E3F182879FFA7001F53EC /* EnemyLossesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnemyLossesCell.xib; sourceTree = "<group>"; };
+		041E3F1E287A0C44001F53EC /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		041E3F22287A0CC7001F53EC /* Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Header.xib; sourceTree = "<group>"; };
+		041E3F25287B13BC001F53EC /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DS-DIGI.TTF"; path = "../../../../Downloads/ds_digital/DS-DIGI.TTF"; sourceTree = "<group>"; };
+		041E3F28287B13CE001F53EC /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
 		04624F462874B29B001F1B5C /* Enemy Losses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Enemy Losses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04624F492874B29B001F1B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04624F4B2874B29B001F1B5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,13 +60,35 @@
 			path = ApiService;
 			sourceTree = "<group>";
 		};
+		041E3F1B2879FFBE001F53EC /* EnemyLossesCell */ = {
+			isa = PBXGroup;
+			children = (
+				041E3F172879FFA7001F53EC /* EnemyLossesCell.swift */,
+				041E3F182879FFA7001F53EC /* EnemyLossesCell.xib */,
+			);
+			path = EnemyLossesCell;
+			sourceTree = "<group>";
+		};
+		041E3F24287A0D86001F53EC /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				041E3F1E287A0C44001F53EC /* Header.swift */,
+				041E3F22287A0CC7001F53EC /* Header.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		041E3F27287B13C5001F53EC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				041E3F28287B13CE001F53EC /* DS-DIGI.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		04624F3D2874B29B001F1B5C = {
 			isa = PBXGroup;
 			children = (
-				041E3F142874BFF4001F53EC /* ApiService */,
-				04624F5F2874B319001F1B5C /* Controller */,
-				04624F5E2874B307001F1B5C /* View */,
-				04624F5D2874B2FB001F1B5C /* Model */,
 				04624F482874B29B001F1B5C /* Enemy Losses */,
 				04624F472874B29B001F1B5C /* Products */,
 			);
@@ -72,12 +105,17 @@
 		04624F482874B29B001F1B5C /* Enemy Losses */ = {
 			isa = PBXGroup;
 			children = (
+				041E3F27287B13C5001F53EC /* Fonts */,
+				041E3F142874BFF4001F53EC /* ApiService */,
+				04624F5F2874B319001F1B5C /* Controller */,
+				04624F5E2874B307001F1B5C /* View */,
+				04624F5D2874B2FB001F1B5C /* Model */,
 				04624F492874B29B001F1B5C /* AppDelegate.swift */,
 				04624F4B2874B29B001F1B5C /* SceneDelegate.swift */,
-				04624F4F2874B29B001F1B5C /* Main.storyboard */,
 				04624F522874B29D001F1B5C /* Assets.xcassets */,
 				04624F542874B29D001F1B5C /* LaunchScreen.storyboard */,
 				04624F572874B29D001F1B5C /* Info.plist */,
+				041E3F25287B13BC001F53EC /* DS-DIGI.TTF */,
 			);
 			path = "Enemy Losses";
 			sourceTree = "<group>";
@@ -93,6 +131,7 @@
 		04624F5E2874B307001F1B5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04624F4F2874B29B001F1B5C /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +139,8 @@
 		04624F5F2874B319001F1B5C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				041E3F24287A0D86001F53EC /* Header */,
+				041E3F1B2879FFBE001F53EC /* EnemyLossesCell */,
 				04624F4D2874B29B001F1B5C /* ViewController.swift */,
 			);
 			path = Controller;
@@ -164,9 +205,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041E3F26287B13BD001F53EC /* DS-DIGI.TTF in Resources */,
 				04624F562874B29D001F1B5C /* LaunchScreen.storyboard in Resources */,
+				041E3F23287A0CC7001F53EC /* Header.xib in Resources */,
 				04624F532874B29D001F1B5C /* Assets.xcassets in Resources */,
 				04624F512874B29B001F1B5C /* Main.storyboard in Resources */,
+				041E3F1A2879FFA7001F53EC /* EnemyLossesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +224,8 @@
 				04624F4E2874B29B001F1B5C /* ViewController.swift in Sources */,
 				041E3F162874C04D001F53EC /* ApiService.swift in Sources */,
 				04624F4A2874B29B001F1B5C /* AppDelegate.swift in Sources */,
+				041E3F1F287A0C44001F53EC /* Header.swift in Sources */,
+				041E3F192879FFA7001F53EC /* EnemyLossesCell.swift in Sources */,
 				041E3F132874B7F3001F53EC /* EnemyModels.swift in Sources */,
 				04624F4C2874B29B001F1B5C /* SceneDelegate.swift in Sources */,
 			);
