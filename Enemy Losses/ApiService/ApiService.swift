@@ -80,7 +80,37 @@ extension ApiService: ApiServiceProtocol {
                 completion(.failure(anyError))
             }
             
-            fatalError("implement models marge")
+            guard let personalModels = personalModels, let equipmentModels = equipmentModels else {
+                preconditionFailure("unexpected")
+            }
+            print(personalModels)
+            
+            var personalMap: [String: PersonnelModelDto] = [:]
+            personalModels.forEach { personalMap[$0.date] = $0}
+    
+            var equipmnetMap: [String: EquipmentModelDto] = [:]
+            equipmentModels.forEach { equipmnetMap[$0.date] = $0 }
+            
+            var datesSet: Set<String> = .init()
+            
+            personalModels.forEach { datesSet.insert($0.date) }
+            equipmentModels.forEach { datesSet.insert($0.date) }
+            
+            var resutTuplesMap: [String: (personal: PersonnelModelDto?, equipment: EquipmentModelDto?)] = [:]
+            
+            datesSet.forEach { date in
+                resutTuplesMap[date] = (personalMap[date], equipmnetMap[date])
+            }
+            
+            let results: [DayLossesModel] = resutTuplesMap.values.compactMap { dayTuple in
+                guard let date = dayTuple.personal?.date ?? dayTuple.equipment?.date else {
+                    print("cannot gte day for record")
+                    return nil
+                }
+                let personal = dayTuple.personal
+                let equipment = dayTuple.equipment
+                return .init(date: date, personal: personal, equipment: equipment)
+            }
         }
         
         requestPersonnelLosses {

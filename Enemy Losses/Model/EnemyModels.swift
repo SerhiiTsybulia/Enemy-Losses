@@ -106,7 +106,7 @@ struct PersonnelModelDto: Codable {
 // MARK: - DayLossesModel
 
 struct DayLossesModel {
-    let date: Date
+    let date: String
     let personal: PersonnelModelDto?
     let equipment: EquipmentModelDto?
 }
