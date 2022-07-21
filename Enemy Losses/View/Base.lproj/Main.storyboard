@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -63,6 +62,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Helicopter"/>
+                                                <connections>
+                                                    <action selector="helicopterBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oZ-my-COf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fh-Fr-0dq" userLabel="Fuel tank">
                                                 <rect key="frame" x="68.5" y="227.5" width="70" height="70"/>
@@ -72,6 +74,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Fuel tank"/>
+                                                <connections>
+                                                    <action selector="fuelTankBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPJ-3M-zkq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-IZ-Abq" userLabel="APC">
                                                 <rect key="frame" x="68.5" y="152.5" width="70" height="70"/>
@@ -81,6 +86,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="APC"/>
+                                                <connections>
+                                                    <action selector="apcBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="p98-Ad-jw5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-Jk-Fsx" userLabel="Naval ship">
                                                 <rect key="frame" x="68.5" y="377.5" width="70" height="70"/>
@@ -90,6 +98,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Naval ship"/>
+                                                <connections>
+                                                    <action selector="navalShipBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1R-Nb-CJh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rof-1X-tlA" userLabel="Special equipment">
                                                 <rect key="frame" x="68.5" y="452.5" width="70" height="70"/>
@@ -99,6 +110,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Special eq"/>
+                                                <connections>
+                                                    <action selector="specialEquipmnetBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="YY7-QJ-S04"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsg-TH-m1i" userLabel="Vehicles and fuel tanks">
                                                 <rect key="frame" x="68.5" y="527.5" width="70" height="70"/>
@@ -108,6 +122,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Vehicles"/>
+                                                <connections>
+                                                    <action selector="vehiclesAndFuelTanksBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZI-ST-bNw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZu-V7-CBa" userLabel="MRL">
                                                 <rect key="frame" x="68.5" y="302.5" width="70" height="70"/>
@@ -117,6 +134,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="MRL"/>
+                                                <connections>
+                                                    <action selector="mrlBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIz-i6-FwG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -149,6 +169,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Cruise "/>
+                                                <connections>
+                                                    <action selector="cruiseMissilesBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oa7-CC-MH1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQA-lO-1OX" userLabel="Drone">
                                                 <rect key="frame" x="68.5" y="527.5" width="70" height="70"/>
@@ -158,6 +181,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Drone"/>
+                                                <connections>
+                                                    <action selector="droneBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lhi-bi-M4V"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNd-4z-40r" userLabel="Mobile SRBM system">
                                                 <rect key="frame" x="68.5" y="452.5" width="70" height="70"/>
@@ -167,6 +193,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Mobile "/>
+                                                <connections>
+                                                    <action selector="mobileSRBMSystemBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="sv7-JC-36P"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-BZ-AOM" userLabel="Anti-aircraft warfare">
                                                 <rect key="frame" x="68.5" y="302.5" width="70" height="70"/>
@@ -176,6 +205,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Anti-air"/>
+                                                <connections>
+                                                    <action selector="antiAircraftWarfareBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gl9-rC-roh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPw-Wj-xck" userLabel="Field artillery">
                                                 <rect key="frame" x="68.5" y="152.5" width="70" height="70"/>
@@ -185,6 +217,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Field "/>
+                                                <connections>
+                                                    <action selector="fieldArtilleryBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUJ-9F-Bnb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTQ-Y6-oPQ" userLabel="Tank">
                                                 <rect key="frame" x="68.5" y="77.5" width="70" height="70"/>
@@ -194,6 +229,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Tank"/>
+                                                <connections>
+                                                    <action selector="tankBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="fL6-YK-dcm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opy-Mb-VwL" userLabel="Aircraft">
                                                 <rect key="frame" x="68.5" y="2.5" width="70" height="70"/>
@@ -203,6 +241,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Aircraft"/>
+                                                <connections>
+                                                    <action selector="aircraftBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsy-aR-sBL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-is-yEc" userLabel="Military auto">
                                                 <rect key="frame" x="68.5" y="227.5" width="70" height="70"/>
@@ -212,6 +253,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Militar"/>
+                                                <connections>
+                                                    <action selector="militaryAutoBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbF-Ql-oTd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -234,7 +278,6 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Agf-Uj-LE5" firstAttribute="centerY" secondItem="xnH-lN-aOe" secondAttribute="centerY" id="6xg-vH-wtH"/>
                                     <constraint firstItem="Agf-Uj-LE5" firstAttribute="top" secondItem="xnH-lN-aOe" secondAttribute="top" id="JJg-0b-v2i"/>
@@ -249,7 +292,6 @@
                             </view>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-aF-x3O">
                                 <rect key="frame" x="39" y="231" width="336" height="31"/>
-                                <color key="backgroundColor" red="0.99889963869999998" green="0.87989377980000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.99889963869999998" green="0.87989377980000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <locale key="locale" localeIdentifier="en"/>
                             </datePicker>
@@ -286,7 +328,7 @@
                         <outlet property="personnelBtn" destination="vAT-4k-Miy" id="Bbt-pQ-lNU"/>
                         <outlet property="specialEquipmnetBtn" destination="rof-1X-tlA" id="V0w-zE-Y7X"/>
                         <outlet property="tankBtn" destination="pTQ-Y6-oPQ" id="ygW-sc-GAn"/>
-                        <outlet property="veiclesAndFuelTanksBtn" destination="Zsg-TH-m1i" id="91Q-2m-Pks"/>
+                        <outlet property="vehiclesAndFuelTanksBtn" destination="Zsg-TH-m1i" id="Eg1-To-nc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -345,7 +387,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LIQUIDATED" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6l-dI-p5l">
-                                <rect key="frame" x="103.5" y="303.5" width="207.5" height="76.5"/>
+                                <rect key="frame" x="103.5" y="289" width="207.5" height="76.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNITS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISk-Jq-EaC" userLabel="UNITS">
+                                <rect key="frame" x="154.5" y="328" width="105" height="76.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -354,13 +402,15 @@
                         <viewLayoutGuide key="safeArea" id="lsb-vo-NRe"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.38823529410000002" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="etQ-CV-5gE" firstAttribute="top" secondItem="C6l-dI-p5l" secondAttribute="bottom" constant="8" symbolic="YES" id="3QU-2z-nKl"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="centerX" secondItem="YU5-QQ-vh7" secondAttribute="centerX" id="Dvr-RI-BnX"/>
+                            <constraint firstItem="C6l-dI-p5l" firstAttribute="centerX" secondItem="37r-8i-IH3" secondAttribute="centerX" id="GYK-cK-ezy"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="centerY" secondItem="37r-8i-IH3" secondAttribute="centerY" id="KD2-bm-wEm"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="leading" secondItem="lsb-vo-NRe" secondAttribute="leading" constant="22" id="KIu-0H-J90"/>
                             <constraint firstItem="lsb-vo-NRe" firstAttribute="bottom" secondItem="YU5-QQ-vh7" secondAttribute="bottom" constant="50" id="Nxg-IX-5y9"/>
+                            <constraint firstItem="C6l-dI-p5l" firstAttribute="top" secondItem="lsb-vo-NRe" secondAttribute="top" constant="245" id="S0f-c3-zsi"/>
+                            <constraint firstItem="ISk-Jq-EaC" firstAttribute="top" secondItem="lsb-vo-NRe" secondAttribute="top" constant="284" id="bbU-17-Axu"/>
                             <constraint firstItem="YU5-QQ-vh7" firstAttribute="centerX" secondItem="37r-8i-IH3" secondAttribute="centerX" id="ccI-AH-OWg"/>
-                            <constraint firstItem="etQ-CV-5gE" firstAttribute="centerX" secondItem="C6l-dI-p5l" secondAttribute="centerX" id="q3C-AJ-hYi"/>
+                            <constraint firstItem="ISk-Jq-EaC" firstAttribute="centerX" secondItem="37r-8i-IH3" secondAttribute="centerX" id="k9B-G9-YEY"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="top" secondItem="37r-8i-IH3" secondAttribute="top" constant="388" id="r22-gX-EY0"/>
                         </constraints>
                     </view>
@@ -401,8 +451,5 @@
     </scenes>
     <resources>
         <image name="GS_Logo" width="1458" height="1458"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
