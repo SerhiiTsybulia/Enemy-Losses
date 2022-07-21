@@ -6,14 +6,13 @@
 //  Copyright © 2022 STDevelopment. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 
 // MARK: - Equipment model
 
-struct EquipmentModelDto: Codable{
-    let date: String
+struct EquipmentModelDto: Codable {
+    let date: Date
     let day: Int
     let aircraft: Int?
     let helicopter: Int?
@@ -50,11 +49,12 @@ struct EquipmentModelDto: Codable{
     init(from decoder: Decoder) throws {
         do {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            date = try container.decode(String.self, forKey: .date)
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd"
-            let realDate = dateFormatter.date(from: date)
-//            print(realDate)
+            let dateString = try container.decode(String.self, forKey: .date)
+            if let realDate = dateParser.date(from: dateString) {
+                date = realDate
+            } else {
+                throw MyError(nil)
+            }
             day = Self.tryParseInt(container, key: .day) ?? -1
             aircraft = Self.tryParseInt(container, key: .aircraft)
             helicopter = Self.tryParseInt(container, key: .helicopter)
@@ -72,7 +72,6 @@ struct EquipmentModelDto: Codable{
             vehiclesAndFuelTanks = Self.tryParseInt(container, key: .vehiclesAndFuelTanks)
             cruiseMissiles = Self.tryParseInt(container, key: .cruiseMissiles)
         } catch {
-            print("We have error here: \(error)")
             throw error
         }
     }
@@ -91,22 +90,57 @@ struct EquipmentModelDto: Codable{
 // MARK: - Personnel model
 
 struct PersonnelModelDto: Codable {
-    let date: String
-    let day, personnel: Int
+    let date: Date
+    let day: Int
+    let personnel: Int
     let optionalPersonnel: String
-    let pow: Int
+    let pow: Int?
     
     enum CodingKeys: String, CodingKey {
         case date, day, personnel
         case optionalPersonnel = "personnel*"
         case pow = "POW"
     }
+    
+    init(from decoder: Decoder) throws {
+        do {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            let dateString = try container.decode(String.self, forKey: .date)
+            if let realDate = dateParser.date(from: dateString) {
+                date = realDate
+            } else {
+                throw MyError(nil)
+            }
+            day = Self.tryParseInt(container, key: .day) ?? -1
+            personnel = Self.tryParseInt(container, key: .personnel) ?? 0
+            optionalPersonnel = try container.decode(String.self, forKey: .optionalPersonnel)
+            pow = Self.tryParseInt(container, key: .pow)
+        } catch {
+            throw error
+        }
+    }
+    
+    static func tryParseInt(_ container: KeyedDecodingContainer<PersonnelModelDto.CodingKeys>, key: CodingKeys) -> Int? {
+        if let intValue = try? container.decode(Int.self, forKey: key) {
+            return intValue
+        } else if let intString = try? container.decode(String.self, forKey: key), let intValue = Int(intString) {
+            return intValue
+        } else {
+            return nil
+        }
+    }
 }
 
 // MARK: - DayLossesModel
 
 struct DayLossesModel {
-    let date: String
+    let date: Date
     let personal: PersonnelModelDto?
     let equipment: EquipmentModelDto?
 }
+
+private var dateParser: DateFormatter = {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
+    return dateFormatter
+}()

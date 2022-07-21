@@ -6,7 +6,7 @@
 //  Copyright © 2022 STDevelopment. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 typealias GetModelsCompletion = (Result<[DayLossesModel], MyError>) -> Void
 
@@ -78,25 +78,25 @@ extension ApiService: ApiServiceProtocol {
             
             if let anyError = personalError ?? equipmentError {
                 completion(.failure(anyError))
+                return
             }
             
             guard let personalModels = personalModels, let equipmentModels = equipmentModels else {
                 preconditionFailure("unexpected")
             }
-            print(personalModels)
             
-            var personalMap: [String: PersonnelModelDto] = [:]
+            var personalMap: [Date: PersonnelModelDto] = [:]
             personalModels.forEach { personalMap[$0.date] = $0}
     
-            var equipmnetMap: [String: EquipmentModelDto] = [:]
+            var equipmnetMap: [Date: EquipmentModelDto] = [:]
             equipmentModels.forEach { equipmnetMap[$0.date] = $0 }
             
-            var datesSet: Set<String> = .init()
+            var datesSet: Set<Date> = .init()
             
             personalModels.forEach { datesSet.insert($0.date) }
             equipmentModels.forEach { datesSet.insert($0.date) }
             
-            var resutTuplesMap: [String: (personal: PersonnelModelDto?, equipment: EquipmentModelDto?)] = [:]
+            var resutTuplesMap: [Date: (personal: PersonnelModelDto?, equipment: EquipmentModelDto?)] = [:]
             
             datesSet.forEach { date in
                 resutTuplesMap[date] = (personalMap[date], equipmnetMap[date])
@@ -104,13 +104,14 @@ extension ApiService: ApiServiceProtocol {
             
             let results: [DayLossesModel] = resutTuplesMap.values.compactMap { dayTuple in
                 guard let date = dayTuple.personal?.date ?? dayTuple.equipment?.date else {
-                    print("cannot gte day for record")
                     return nil
                 }
                 let personal = dayTuple.personal
                 let equipment = dayTuple.equipment
                 return .init(date: date, personal: personal, equipment: equipment)
             }
+            
+            completion(.success(results))
         }
         
         requestPersonnelLosses {
