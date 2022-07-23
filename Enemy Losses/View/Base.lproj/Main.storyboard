@@ -39,242 +39,530 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnH-lN-aOe" userLabel="LossesView">
                                 <rect key="frame" x="0.0" y="262" width="414" height="600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agf-Uj-LE5" userLabel="Left">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="600"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAT-4k-Miy" userLabel="Personnel">
-                                                <rect key="frame" x="68.5" y="2.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="8j8-0j-WSi"/>
-                                                    <constraint firstAttribute="width" constant="70" id="FXF-Tm-Qnb"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Personnel"/>
-                                                <connections>
-                                                    <action selector="personnelBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBg-CX-JC7"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-hh-KNM" userLabel="Helicopter">
-                                                <rect key="frame" x="68.5" y="77.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="8Jc-An-1Wp"/>
-                                                    <constraint firstAttribute="width" constant="70" id="XTm-W7-t3g"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Helicopter"/>
-                                                <connections>
-                                                    <action selector="helicopterBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oZ-my-COf"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fh-Fr-0dq" userLabel="Fuel tank">
-                                                <rect key="frame" x="68.5" y="227.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="8Ca-iI-mOa"/>
-                                                    <constraint firstAttribute="width" constant="70" id="WYX-vv-uBM"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Fuel tank"/>
-                                                <connections>
-                                                    <action selector="fuelTankBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPJ-3M-zkq"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-IZ-Abq" userLabel="APC">
-                                                <rect key="frame" x="68.5" y="152.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="E9U-On-kxY"/>
-                                                    <constraint firstAttribute="width" constant="70" id="hqx-Me-ujp"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="APC"/>
-                                                <connections>
-                                                    <action selector="apcBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="p98-Ad-jw5"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-Jk-Fsx" userLabel="Naval ship">
-                                                <rect key="frame" x="68.5" y="377.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="E9C-ML-F8S"/>
-                                                    <constraint firstAttribute="width" constant="70" id="svu-NK-Uxz"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Naval ship"/>
-                                                <connections>
-                                                    <action selector="navalShipBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1R-Nb-CJh"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rof-1X-tlA" userLabel="Special equipment">
-                                                <rect key="frame" x="68.5" y="452.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="70" id="dAS-4H-NAB"/>
-                                                    <constraint firstAttribute="height" constant="70" id="ewI-vk-Kie"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Special eq"/>
-                                                <connections>
-                                                    <action selector="specialEquipmnetBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="YY7-QJ-S04"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsg-TH-m1i" userLabel="Vehicles and fuel tanks">
-                                                <rect key="frame" x="68.5" y="527.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="70" id="SEv-11-GN1"/>
-                                                    <constraint firstAttribute="height" constant="70" id="x7G-G5-9b8"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Vehicles"/>
-                                                <connections>
-                                                    <action selector="vehiclesAndFuelTanksBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZI-ST-bNw"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZu-V7-CBa" userLabel="MRL">
-                                                <rect key="frame" x="68.5" y="302.5" width="70" height="70"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="70" id="cZW-R3-3x2"/>
-                                                    <constraint firstAttribute="width" constant="70" id="leQ-40-6FK"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="MRL"/>
-                                                <connections>
-                                                    <action selector="mrlBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIz-i6-FwG"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="vAT-4k-Miy" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="1Fj-bR-bp0"/>
-                                            <constraint firstItem="cbn-IZ-Abq" firstAttribute="top" secondItem="Qgh-hh-KNM" secondAttribute="bottom" constant="5" id="9Ig-4v-Oub"/>
-                                            <constraint firstItem="0Fh-Fr-0dq" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="DgS-du-qho"/>
-                                            <constraint firstItem="aZu-V7-CBa" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="GME-14-Vao"/>
-                                            <constraint firstItem="aZu-V7-CBa" firstAttribute="top" secondItem="0Fh-Fr-0dq" secondAttribute="bottom" constant="5" id="H5W-Dn-7d7"/>
-                                            <constraint firstItem="rof-1X-tlA" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="Mw3-eZ-7Po"/>
-                                            <constraint firstItem="Zsg-TH-m1i" firstAttribute="top" secondItem="rof-1X-tlA" secondAttribute="bottom" constant="5" id="OkC-2H-eTA"/>
-                                            <constraint firstItem="Qgh-hh-KNM" firstAttribute="top" secondItem="vAT-4k-Miy" secondAttribute="bottom" constant="5" id="PvF-Q7-1m6"/>
-                                            <constraint firstItem="yhi-Jk-Fsx" firstAttribute="top" secondItem="aZu-V7-CBa" secondAttribute="bottom" constant="5" id="QFj-cm-gU6"/>
-                                            <constraint firstItem="Qgh-hh-KNM" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="RI7-Sd-8vU"/>
-                                            <constraint firstItem="0Fh-Fr-0dq" firstAttribute="top" secondItem="cbn-IZ-Abq" secondAttribute="bottom" constant="5" id="gFo-IC-roh"/>
-                                            <constraint firstItem="cbn-IZ-Abq" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="gFo-aJ-kfE"/>
-                                            <constraint firstItem="Zsg-TH-m1i" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="gwF-A5-eh2"/>
-                                            <constraint firstItem="rof-1X-tlA" firstAttribute="top" secondItem="yhi-Jk-Fsx" secondAttribute="bottom" constant="5" id="im4-If-HFo"/>
-                                            <constraint firstItem="vAT-4k-Miy" firstAttribute="top" secondItem="Agf-Uj-LE5" secondAttribute="top" constant="2.5" id="llx-AH-NaN"/>
-                                            <constraint firstItem="yhi-Jk-Fsx" firstAttribute="centerX" secondItem="Agf-Uj-LE5" secondAttribute="centerX" id="vxl-al-9F9"/>
-                                        </constraints>
-                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TkW-12-dA9" userLabel="Right">
                                         <rect key="frame" x="207" y="0.0" width="207" height="600"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JB-CX-Ibc" userLabel="Cruise Missiles">
-                                                <rect key="frame" x="68.5" y="377.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="377.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="atA-yV-rJw"/>
                                                     <constraint firstAttribute="width" constant="70" id="t5s-WF-ND0"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Cruise "/>
+                                                <buttonConfiguration key="configuration" style="plain" image="cruiseMissiles 70"/>
                                                 <connections>
                                                     <action selector="cruiseMissilesBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oa7-CC-MH1"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQA-lO-1OX" userLabel="Drone">
-                                                <rect key="frame" x="68.5" y="527.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="527.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="K3o-oF-w2k"/>
                                                     <constraint firstAttribute="width" constant="70" id="j3m-cW-T1o"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Drone"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="drone 70"/>
                                                 <connections>
                                                     <action selector="droneBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lhi-bi-M4V"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNd-4z-40r" userLabel="Mobile SRBM system">
-                                                <rect key="frame" x="68.5" y="452.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="452.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="gyC-Tp-uDh"/>
                                                     <constraint firstAttribute="width" constant="70" id="hU4-wt-sc8"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Mobile "/>
+                                                <buttonConfiguration key="configuration" style="plain" image="mobileSRBMSystem 70"/>
                                                 <connections>
                                                     <action selector="mobileSRBMSystemBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="sv7-JC-36P"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-BZ-AOM" userLabel="Anti-aircraft warfare">
-                                                <rect key="frame" x="68.5" y="302.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="302.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="cNd-3i-jF9"/>
                                                     <constraint firstAttribute="width" constant="70" id="ccU-Vd-kkM"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Anti-air"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="antiAircraftWarfare 70"/>
                                                 <connections>
                                                     <action selector="antiAircraftWarfareBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gl9-rC-roh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPw-Wj-xck" userLabel="Field artillery">
-                                                <rect key="frame" x="68.5" y="152.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="152.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="OWe-ad-2ln"/>
                                                     <constraint firstAttribute="height" constant="70" id="fwc-bc-aOn"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Field "/>
+                                                <buttonConfiguration key="configuration" style="plain" image="fieldArttillery 70"/>
                                                 <connections>
                                                     <action selector="fieldArtilleryBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUJ-9F-Bnb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTQ-Y6-oPQ" userLabel="Tank">
-                                                <rect key="frame" x="68.5" y="77.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="77.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="Eb6-ZO-AUs"/>
                                                     <constraint firstAttribute="width" constant="70" id="LtH-uI-jyp"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Tank"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="tank 70"/>
                                                 <connections>
                                                     <action selector="tankBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="fL6-YK-dcm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opy-Mb-VwL" userLabel="Aircraft">
-                                                <rect key="frame" x="68.5" y="2.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="2.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="3gB-cc-HPL"/>
                                                     <constraint firstAttribute="width" constant="70" id="CUA-uH-0Ty"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Aircraft"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="aircraft 70"/>
                                                 <connections>
                                                     <action selector="aircraftBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsy-aR-sBL"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-is-yEc" userLabel="Military auto">
-                                                <rect key="frame" x="68.5" y="227.5" width="70" height="70"/>
+                                                <rect key="frame" x="20" y="227.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="uKP-Au-1FM"/>
                                                     <constraint firstAttribute="height" constant="70" id="ujy-Dk-rSC"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Militar"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="militaryAuto 70"/>
                                                 <connections>
                                                     <action selector="militaryAutoBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbF-Ql-oTd"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AIRCRAFT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgy-uR-mWd" userLabel="Aircraft lable">
+                                                <rect key="frame" x="118.5" y="30" width="60" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="KHW-bh-uIL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TANK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpr-1L-BSp" userLabel="Tank lable">
+                                                <rect key="frame" x="133" y="105" width="31.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="m8M-nR-vot"/>
+                                                    <constraint firstAttribute="height" constant="15" id="zcC-GY-QyK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIELD" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoM-Ed-DgM" userLabel="Field lable">
+                                                <rect key="frame" x="131" y="173" width="34.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="q1q-tp-T7O"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTILLERY" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KD2-pw-xFl" userLabel="Artillery lable">
+                                                <rect key="frame" x="116" y="188" width="65" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="YKa-NQ-YV8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MILITARY AUTO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82t-pe-DwI" userLabel="Military auto lable">
+                                                <rect key="frame" x="103" y="255" width="90.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="4L7-Ep-kJF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANTI-AIRCRAFT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8O4-Ss-63N" userLabel="Anti-aircraft lable">
+                                                <rect key="frame" x="103" y="322" width="91.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="zeW-eR-ota"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARFARE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFR-ch-NGL" userLabel="Warfare lable">
+                                                <rect key="frame" x="119" y="336" width="59" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="NJD-yE-9rl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRUISE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjG-QB-xoC" userLabel="Cruise lable">
+                                                <rect key="frame" x="125" y="399" width="45.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="idw-QE-Lmb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOBILE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ice-al-zxb" userLabel="Mobile lable">
+                                                <rect key="frame" x="125" y="467" width="45.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="Yzc-ne-mRA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SRBM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rty-Ze-DpE" userLabel="SRBM lable">
+                                                <rect key="frame" x="130" y="480" width="35" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="lWa-BM-29E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SYSTEM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiG-ls-4Bo" userLabel="System lable">
+                                                <rect key="frame" x="123" y="493" width="49.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="9T6-8f-6kB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRONE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkT-0q-gQl" userLabel="System lable">
+                                                <rect key="frame" x="126" y="555" width="43.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="KzP-Pj-1KH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISSILES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nt-ig-rfG" userLabel="Missels lable">
+                                                <rect key="frame" x="120" y="414" width="55.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="ekM-IE-SFO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="AQA-lO-1OX" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="ACV-95-gaM"/>
-                                            <constraint firstItem="uPw-Wj-xck" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="B8G-7n-UBg"/>
-                                            <constraint firstItem="cNd-4z-40r" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="DEd-6V-Me3"/>
-                                            <constraint firstItem="zSy-BZ-AOM" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="FRs-u3-KCV"/>
+                                            <constraint firstItem="8O4-Ss-63N" firstAttribute="leading" secondItem="zSy-BZ-AOM" secondAttribute="trailing" constant="13" id="4VU-Yb-lLc"/>
+                                            <constraint firstItem="EjG-QB-xoC" firstAttribute="leading" secondItem="7JB-CX-Ibc" secondAttribute="trailing" constant="35" id="6JE-ws-eTw"/>
+                                            <constraint firstItem="zSy-BZ-AOM" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="7PU-B9-OpW"/>
+                                            <constraint firstItem="cNd-4z-40r" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="7wm-O8-LXI"/>
+                                            <constraint firstItem="NkT-0q-gQl" firstAttribute="top" secondItem="QiG-ls-4Bo" secondAttribute="bottom" constant="47" id="81d-tM-3Tj"/>
+                                            <constraint firstItem="82t-pe-DwI" firstAttribute="leading" secondItem="Hhy-is-yEc" secondAttribute="trailing" constant="13" id="8MG-KM-vpM"/>
+                                            <constraint firstItem="opy-Mb-VwL" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="8od-n1-nYV"/>
+                                            <constraint firstItem="pTQ-Y6-oPQ" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="Aih-Mh-JUD"/>
+                                            <constraint firstItem="KD2-pw-xFl" firstAttribute="leading" secondItem="uPw-Wj-xck" secondAttribute="trailing" constant="26" id="AxL-Vq-Ibs"/>
+                                            <constraint firstItem="KD2-pw-xFl" firstAttribute="top" secondItem="LoM-Ed-DgM" secondAttribute="bottom" id="BFK-4c-wab"/>
+                                            <constraint firstItem="Ice-al-zxb" firstAttribute="leading" secondItem="cNd-4z-40r" secondAttribute="trailing" constant="35" id="BtS-P2-hZC"/>
+                                            <constraint firstItem="uPw-Wj-xck" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="E1w-KU-vIg"/>
+                                            <constraint firstItem="rty-Ze-DpE" firstAttribute="top" secondItem="EjG-QB-xoC" secondAttribute="bottom" constant="66" id="GhM-ML-Bq1"/>
+                                            <constraint firstItem="82t-pe-DwI" firstAttribute="top" secondItem="KD2-pw-xFl" secondAttribute="bottom" constant="52" id="I1T-AA-q6o"/>
+                                            <constraint firstItem="Dgy-uR-mWd" firstAttribute="top" secondItem="TkW-12-dA9" secondAttribute="top" constant="30" id="Idh-36-AYl"/>
                                             <constraint firstItem="AQA-lO-1OX" firstAttribute="top" secondItem="cNd-4z-40r" secondAttribute="bottom" constant="5" id="Isv-2U-Qes"/>
-                                            <constraint firstItem="pTQ-Y6-oPQ" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="PiA-H4-grf"/>
+                                            <constraint firstItem="Mpr-1L-BSp" firstAttribute="top" secondItem="Dgy-uR-mWd" secondAttribute="bottom" constant="60" id="JnB-Q4-LLO"/>
+                                            <constraint firstItem="QiG-ls-4Bo" firstAttribute="leading" secondItem="cNd-4z-40r" secondAttribute="trailing" constant="33" id="KAs-3k-hII"/>
+                                            <constraint firstItem="7JB-CX-Ibc" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="MX9-Y5-AQ3"/>
+                                            <constraint firstItem="EjG-QB-xoC" firstAttribute="top" secondItem="EFR-ch-NGL" secondAttribute="bottom" constant="48" id="OVs-kZ-3oE"/>
+                                            <constraint firstItem="EFR-ch-NGL" firstAttribute="leading" secondItem="zSy-BZ-AOM" secondAttribute="trailing" constant="29" id="P3A-9s-eXe"/>
+                                            <constraint firstItem="LoM-Ed-DgM" firstAttribute="leading" secondItem="uPw-Wj-xck" secondAttribute="trailing" constant="41" id="Uxh-fa-vKa"/>
+                                            <constraint firstItem="0Nt-ig-rfG" firstAttribute="top" secondItem="EjG-QB-xoC" secondAttribute="bottom" id="X1z-w7-QJr"/>
                                             <constraint firstItem="pTQ-Y6-oPQ" firstAttribute="top" secondItem="opy-Mb-VwL" secondAttribute="bottom" constant="5" id="ZEP-WT-xTS"/>
-                                            <constraint firstItem="7JB-CX-Ibc" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="aNt-hD-pz7"/>
                                             <constraint firstItem="cNd-4z-40r" firstAttribute="top" secondItem="7JB-CX-Ibc" secondAttribute="bottom" constant="5" id="bE3-3T-kcc"/>
+                                            <constraint firstItem="EFR-ch-NGL" firstAttribute="top" secondItem="82t-pe-DwI" secondAttribute="bottom" constant="66" id="c9u-dB-FZP"/>
+                                            <constraint firstItem="NkT-0q-gQl" firstAttribute="leading" secondItem="AQA-lO-1OX" secondAttribute="trailing" constant="36" id="cD7-Lb-BKG"/>
+                                            <constraint firstItem="0Nt-ig-rfG" firstAttribute="leading" secondItem="7JB-CX-Ibc" secondAttribute="trailing" constant="30" id="emu-bv-c68"/>
+                                            <constraint firstItem="rty-Ze-DpE" firstAttribute="leading" secondItem="cNd-4z-40r" secondAttribute="trailing" constant="40" id="gVk-wX-uO0"/>
                                             <constraint firstItem="7JB-CX-Ibc" firstAttribute="top" secondItem="zSy-BZ-AOM" secondAttribute="bottom" constant="5" id="hQ5-kT-CcL"/>
                                             <constraint firstItem="Hhy-is-yEc" firstAttribute="top" secondItem="uPw-Wj-xck" secondAttribute="bottom" constant="5" id="jml-ne-PFW"/>
                                             <constraint firstItem="opy-Mb-VwL" firstAttribute="top" secondItem="TkW-12-dA9" secondAttribute="top" constant="2.5" id="knA-Kw-6ra"/>
-                                            <constraint firstItem="Hhy-is-yEc" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="o9l-DE-agM"/>
-                                            <constraint firstItem="opy-Mb-VwL" firstAttribute="centerX" secondItem="TkW-12-dA9" secondAttribute="centerX" id="uzA-sq-khp"/>
+                                            <constraint firstItem="8O4-Ss-63N" firstAttribute="top" secondItem="82t-pe-DwI" secondAttribute="bottom" constant="52" id="lpE-4l-Xzh"/>
+                                            <constraint firstItem="AQA-lO-1OX" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="mVe-g4-lof"/>
+                                            <constraint firstItem="QiG-ls-4Bo" firstAttribute="top" secondItem="Ice-al-zxb" secondAttribute="bottom" constant="11" id="qEj-H4-i0t"/>
+                                            <constraint firstItem="Hhy-is-yEc" firstAttribute="leading" secondItem="TkW-12-dA9" secondAttribute="leading" constant="20" id="sR4-l9-JkH"/>
+                                            <constraint firstItem="LoM-Ed-DgM" firstAttribute="top" secondItem="Mpr-1L-BSp" secondAttribute="bottom" constant="53" id="sed-ET-KSc"/>
+                                            <constraint firstItem="Dgy-uR-mWd" firstAttribute="leading" secondItem="opy-Mb-VwL" secondAttribute="trailing" constant="28.5" id="uBO-3D-xNR"/>
                                             <constraint firstItem="uPw-Wj-xck" firstAttribute="top" secondItem="pTQ-Y6-oPQ" secondAttribute="bottom" constant="5" id="wNs-ui-Zrh"/>
                                             <constraint firstItem="zSy-BZ-AOM" firstAttribute="top" secondItem="Hhy-is-yEc" secondAttribute="bottom" constant="5" id="wYH-kR-2qN"/>
+                                            <constraint firstItem="Mpr-1L-BSp" firstAttribute="leading" secondItem="pTQ-Y6-oPQ" secondAttribute="trailing" constant="43" id="wwZ-wC-CEV"/>
+                                            <constraint firstItem="Ice-al-zxb" firstAttribute="top" secondItem="EjG-QB-xoC" secondAttribute="bottom" constant="53" id="xut-oC-O0k"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Agf-Uj-LE5" userLabel="Left">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="600"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAT-4k-Miy" userLabel="Personnel">
+                                                <rect key="frame" x="117" y="2.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="8j8-0j-WSi"/>
+                                                    <constraint firstAttribute="width" constant="70" id="FXF-Tm-Qnb"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="personnel 70"/>
+                                                <connections>
+                                                    <action selector="personnelBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="TBg-CX-JC7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-hh-KNM" userLabel="Helicopter">
+                                                <rect key="frame" x="117" y="77.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="8Jc-An-1Wp"/>
+                                                    <constraint firstAttribute="width" constant="70" id="XTm-W7-t3g"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="helicopter 70"/>
+                                                <connections>
+                                                    <action selector="helicopterBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oZ-my-COf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Fh-Fr-0dq" userLabel="Fuel tank">
+                                                <rect key="frame" x="117" y="227.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="8Ca-iI-mOa"/>
+                                                    <constraint firstAttribute="width" constant="70" id="WYX-vv-uBM"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="fuelTank 70"/>
+                                                <connections>
+                                                    <action selector="fuelTankBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPJ-3M-zkq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-IZ-Abq" userLabel="APC">
+                                                <rect key="frame" x="117" y="152.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="E9U-On-kxY"/>
+                                                    <constraint firstAttribute="width" constant="70" id="hqx-Me-ujp"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="apc 70"/>
+                                                <connections>
+                                                    <action selector="apcBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="p98-Ad-jw5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhi-Jk-Fsx" userLabel="Naval ship">
+                                                <rect key="frame" x="117" y="377.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="E9C-ML-F8S"/>
+                                                    <constraint firstAttribute="width" constant="70" id="svu-NK-Uxz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="navalShip 70"/>
+                                                <connections>
+                                                    <action selector="navalShipBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1R-Nb-CJh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rof-1X-tlA" userLabel="Special equipment">
+                                                <rect key="frame" x="117" y="452.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="dAS-4H-NAB"/>
+                                                    <constraint firstAttribute="height" constant="70" id="ewI-vk-Kie"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="specialEquipment 70"/>
+                                                <connections>
+                                                    <action selector="specialEquipmnetBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="YY7-QJ-S04"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsg-TH-m1i" userLabel="Vehicles and fuel tanks">
+                                                <rect key="frame" x="117" y="527.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="SEv-11-GN1"/>
+                                                    <constraint firstAttribute="height" constant="70" id="x7G-G5-9b8"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="vehiclesAndFuelTanks 70"/>
+                                                <connections>
+                                                    <action selector="vehiclesAndFuelTanksBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZI-ST-bNw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZu-V7-CBa" userLabel="MRL">
+                                                <rect key="frame" x="117" y="302.5" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="cZW-R3-3x2"/>
+                                                    <constraint firstAttribute="width" constant="70" id="leQ-40-6FK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="mrl 70"/>
+                                                <connections>
+                                                    <action selector="mrlBtnCliked" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIz-i6-FwG"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONNEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISk-Jq-EaC" userLabel="Personnel lable">
+                                                <rect key="frame" x="22" y="22" width="75" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="L91-Cs-wOn"/>
+                                                    <constraint firstAttribute="height" constant="15" id="a8M-8O-4ze"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOSSES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTs-jY-WU3" userLabel="Losses lable">
+                                                <rect key="frame" x="34.5" y="37" width="48.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="2NR-Cz-BKV"/>
+                                                    <constraint firstAttribute="width" constant="48.5" id="Ksh-3Z-tpt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELICOPTER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lev-2k-iDl" userLabel="Helicopter lable">
+                                                <rect key="frame" x="21" y="105" width="77" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="oev-7P-zwQ"/>
+                                                    <constraint firstAttribute="width" constant="77" id="xWx-LS-t4B"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4g-zw-CCv" userLabel="APC lable">
+                                                <rect key="frame" x="47" y="180" width="25" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="bMZ-x7-fmv"/>
+                                                    <constraint firstAttribute="height" constant="15" id="tAD-Nv-FdE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUEL TANK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsZ-kH-UBU" userLabel="Fuel Tank lable">
+                                                <rect key="frame" x="27" y="255" width="65" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="M7r-b1-Gai"/>
+                                                    <constraint firstAttribute="height" constant="15" id="TVk-6J-dDS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MRL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyy-Vc-gJl" userLabel="MRL lable">
+                                                <rect key="frame" x="47" y="330" width="25.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25.5" id="jTl-VS-x8O"/>
+                                                    <constraint firstAttribute="height" constant="15" id="rGu-m6-91H"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAVAL SHIP" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afH-UI-QzH" userLabel="Naval ship lable">
+                                                <rect key="frame" x="25" y="405" width="69" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="G8T-FS-Lk8"/>
+                                                    <constraint firstAttribute="width" constant="69" id="I1l-YX-EkQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPECIAL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yno-Jp-v12" userLabel="Special lable">
+                                                <rect key="frame" x="35" y="472" width="51" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="4ry-03-Z0a"/>
+                                                    <constraint firstAttribute="width" constant="51" id="tjb-5o-KCj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EQUIPMENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHM-ii-meO" userLabel="Equipment lable">
+                                                <rect key="frame" x="24" y="487" width="71.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="ETE-dK-MtJ"/>
+                                                    <constraint firstAttribute="width" constant="71.5" id="vyP-ge-82L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VEHICLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVB-nw-5KL" userLabel="Vehicle lable">
+                                                <rect key="frame" x="33" y="546" width="51.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="HVy-Tb-OPd"/>
+                                                    <constraint firstAttribute="width" constant="51.5" id="gUa-Ec-DBe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AND" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-Hf-qrX" userLabel="And lable">
+                                                <rect key="frame" x="46" y="557" width="25.5" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="93I-M3-azo"/>
+                                                    <constraint firstAttribute="width" constant="25.5" id="iS1-cp-z4Z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FUEL TANKS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRK-3M-34m" userLabel="Fuel tanks lable">
+                                                <rect key="frame" x="23" y="569" width="73" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="S1e-bC-xOJ"/>
+                                                    <constraint firstAttribute="width" constant="73" id="smh-Ev-uhY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cbn-IZ-Abq" firstAttribute="leading" secondItem="w4g-zw-CCv" secondAttribute="trailing" constant="45" id="02v-Fg-ANG"/>
+                                            <constraint firstItem="Zsg-TH-m1i" firstAttribute="leading" secondItem="eRS-Hf-qrX" secondAttribute="trailing" constant="45.5" id="1ah-jL-rwC"/>
+                                            <constraint firstItem="yno-Jp-v12" firstAttribute="top" secondItem="afH-UI-QzH" secondAttribute="bottom" constant="52" id="2Fb-Gr-TvC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Qgh-hh-KNM" secondAttribute="trailing" constant="20" id="5fI-yX-m4Q"/>
+                                            <constraint firstItem="yhi-Jk-Fsx" firstAttribute="leading" secondItem="afH-UI-QzH" secondAttribute="trailing" constant="23" id="8n0-FL-PWi"/>
+                                            <constraint firstItem="cbn-IZ-Abq" firstAttribute="top" secondItem="Qgh-hh-KNM" secondAttribute="bottom" constant="5" id="9Ig-4v-Oub"/>
+                                            <constraint firstItem="eRS-Hf-qrX" firstAttribute="top" secondItem="rHM-ii-meO" secondAttribute="bottom" constant="55" id="BhC-en-Fw4"/>
+                                            <constraint firstItem="vAT-4k-Miy" firstAttribute="leading" secondItem="eTs-jY-WU3" secondAttribute="trailing" constant="34" id="DBr-Ta-87m"/>
+                                            <constraint firstAttribute="trailing" secondItem="aZu-V7-CBa" secondAttribute="trailing" constant="20" id="DZD-Jb-lkT"/>
+                                            <constraint firstItem="aZu-V7-CBa" firstAttribute="top" secondItem="0Fh-Fr-0dq" secondAttribute="bottom" constant="5" id="H5W-Dn-7d7"/>
+                                            <constraint firstItem="eTs-jY-WU3" firstAttribute="top" secondItem="ISk-Jq-EaC" secondAttribute="bottom" id="HsN-X1-jbK"/>
+                                            <constraint firstItem="rHM-ii-meO" firstAttribute="top" secondItem="afH-UI-QzH" secondAttribute="bottom" constant="67" id="Lxn-my-w66"/>
+                                            <constraint firstAttribute="trailing" secondItem="vAT-4k-Miy" secondAttribute="trailing" constant="20" id="MqI-5d-Ugv"/>
+                                            <constraint firstItem="Zsg-TH-m1i" firstAttribute="top" secondItem="rof-1X-tlA" secondAttribute="bottom" constant="5" id="OkC-2H-eTA"/>
+                                            <constraint firstItem="Qgh-hh-KNM" firstAttribute="top" secondItem="vAT-4k-Miy" secondAttribute="bottom" constant="5" id="PvF-Q7-1m6"/>
+                                            <constraint firstItem="yhi-Jk-Fsx" firstAttribute="top" secondItem="aZu-V7-CBa" secondAttribute="bottom" constant="5" id="QFj-cm-gU6"/>
+                                            <constraint firstItem="0Fh-Fr-0dq" firstAttribute="leading" secondItem="WsZ-kH-UBU" secondAttribute="trailing" constant="25" id="REm-VX-qfx"/>
+                                            <constraint firstItem="lyy-Vc-gJl" firstAttribute="top" secondItem="WsZ-kH-UBU" secondAttribute="bottom" constant="60" id="RG2-Kr-g1R"/>
+                                            <constraint firstAttribute="trailing" secondItem="yhi-Jk-Fsx" secondAttribute="trailing" constant="20" id="TSJ-lu-gK8"/>
+                                            <constraint firstItem="Zsg-TH-m1i" firstAttribute="leading" secondItem="SRK-3M-34m" secondAttribute="trailing" constant="21" id="V2U-TK-KKg"/>
+                                            <constraint firstItem="vAT-4k-Miy" firstAttribute="leading" secondItem="ISk-Jq-EaC" secondAttribute="trailing" constant="20" id="XgC-zo-1XG"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zsg-TH-m1i" secondAttribute="trailing" constant="20" id="ZJe-gJ-bYY"/>
+                                            <constraint firstItem="SRK-3M-34m" firstAttribute="top" secondItem="uVB-nw-5KL" secondAttribute="bottom" constant="8" id="dD4-jP-ATE"/>
+                                            <constraint firstItem="aZu-V7-CBa" firstAttribute="leading" secondItem="lyy-Vc-gJl" secondAttribute="trailing" constant="44.5" id="dyl-ld-tr1"/>
+                                            <constraint firstItem="Lev-2k-iDl" firstAttribute="top" secondItem="eTs-jY-WU3" secondAttribute="bottom" constant="53" id="eCw-nd-4Zz"/>
+                                            <constraint firstItem="Qgh-hh-KNM" firstAttribute="leading" secondItem="Lev-2k-iDl" secondAttribute="trailing" constant="19" id="eEG-5k-V2y"/>
+                                            <constraint firstItem="0Fh-Fr-0dq" firstAttribute="top" secondItem="cbn-IZ-Abq" secondAttribute="bottom" constant="5" id="gFo-IC-roh"/>
+                                            <constraint firstItem="WsZ-kH-UBU" firstAttribute="top" secondItem="w4g-zw-CCv" secondAttribute="bottom" constant="60" id="hUI-32-RYh"/>
+                                            <constraint firstItem="afH-UI-QzH" firstAttribute="top" secondItem="lyy-Vc-gJl" secondAttribute="bottom" constant="60" id="i8l-nI-tog"/>
+                                            <constraint firstItem="uVB-nw-5KL" firstAttribute="top" secondItem="rHM-ii-meO" secondAttribute="bottom" constant="44" id="iU1-al-rXE"/>
+                                            <constraint firstItem="rof-1X-tlA" firstAttribute="top" secondItem="yhi-Jk-Fsx" secondAttribute="bottom" constant="5" id="im4-If-HFo"/>
+                                            <constraint firstItem="vAT-4k-Miy" firstAttribute="top" secondItem="Agf-Uj-LE5" secondAttribute="top" constant="2.5" id="llx-AH-NaN"/>
+                                            <constraint firstItem="w4g-zw-CCv" firstAttribute="top" secondItem="Lev-2k-iDl" secondAttribute="bottom" constant="60" id="nm8-Gf-Gwf"/>
+                                            <constraint firstItem="Zsg-TH-m1i" firstAttribute="leading" secondItem="uVB-nw-5KL" secondAttribute="trailing" constant="32.5" id="oHp-Hx-yR5"/>
+                                            <constraint firstAttribute="trailing" secondItem="cbn-IZ-Abq" secondAttribute="trailing" constant="20" id="q4G-ih-wwk"/>
+                                            <constraint firstItem="rof-1X-tlA" firstAttribute="leading" secondItem="rHM-ii-meO" secondAttribute="trailing" constant="21.5" id="qBU-ju-UQo"/>
+                                            <constraint firstItem="ISk-Jq-EaC" firstAttribute="top" secondItem="Agf-Uj-LE5" secondAttribute="top" constant="22" id="rFH-O6-DKB"/>
+                                            <constraint firstItem="rof-1X-tlA" firstAttribute="leading" secondItem="yno-Jp-v12" secondAttribute="trailing" constant="31" id="u1E-qd-ZU6"/>
+                                            <constraint firstAttribute="trailing" secondItem="rof-1X-tlA" secondAttribute="trailing" constant="20" id="ued-bE-CgX"/>
+                                            <constraint firstAttribute="trailing" secondItem="0Fh-Fr-0dq" secondAttribute="trailing" constant="20" id="xwe-bN-MBk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -292,6 +580,7 @@
                             </view>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="hlK-aF-x3O">
                                 <rect key="frame" x="39" y="231" width="336" height="31"/>
+                                <color key="backgroundColor" red="0.52691930529999997" green="0.63249570129999999" blue="0.4792111516" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.99889963869999998" green="0.87989377980000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <locale key="locale" localeIdentifier="en"/>
                             </datePicker>
@@ -344,10 +633,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YU5-QQ-vh7">
-                                <rect key="frame" x="157.5" y="743" width="99" height="69"/>
+                                <rect key="frame" x="142" y="728" width="130.5" height="84"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title=" BACK" cornerStyle="small" titleAlignment="center">
+                                <buttonConfiguration key="configuration" style="plain" image="BackBtn 70" title=" " cornerStyle="small" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="25"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -392,8 +681,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNITS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISk-Jq-EaC" userLabel="UNITS">
-                                <rect key="frame" x="154.5" y="328" width="105" height="76.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNITS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9It-Em-F0e">
+                                <rect key="frame" x="154" y="333" width="106" height="76.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -402,15 +691,16 @@
                         <viewLayoutGuide key="safeArea" id="lsb-vo-NRe"/>
                         <color key="backgroundColor" red="0.23137254900000001" green="0.38823529410000002" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="9It-Em-F0e" firstAttribute="top" secondItem="lsb-vo-NRe" secondAttribute="top" constant="289" id="7Ec-5Q-aWi"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="centerX" secondItem="YU5-QQ-vh7" secondAttribute="centerX" id="Dvr-RI-BnX"/>
                             <constraint firstItem="C6l-dI-p5l" firstAttribute="centerX" secondItem="37r-8i-IH3" secondAttribute="centerX" id="GYK-cK-ezy"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="centerY" secondItem="37r-8i-IH3" secondAttribute="centerY" id="KD2-bm-wEm"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="leading" secondItem="lsb-vo-NRe" secondAttribute="leading" constant="22" id="KIu-0H-J90"/>
                             <constraint firstItem="lsb-vo-NRe" firstAttribute="bottom" secondItem="YU5-QQ-vh7" secondAttribute="bottom" constant="50" id="Nxg-IX-5y9"/>
                             <constraint firstItem="C6l-dI-p5l" firstAttribute="top" secondItem="lsb-vo-NRe" secondAttribute="top" constant="245" id="S0f-c3-zsi"/>
-                            <constraint firstItem="ISk-Jq-EaC" firstAttribute="top" secondItem="lsb-vo-NRe" secondAttribute="top" constant="284" id="bbU-17-Axu"/>
+                            <constraint firstItem="9It-Em-F0e" firstAttribute="leading" secondItem="lsb-vo-NRe" secondAttribute="leading" constant="154" id="UuE-Mf-I2a"/>
                             <constraint firstItem="YU5-QQ-vh7" firstAttribute="centerX" secondItem="37r-8i-IH3" secondAttribute="centerX" id="ccI-AH-OWg"/>
-                            <constraint firstItem="ISk-Jq-EaC" firstAttribute="centerX" secondItem="37r-8i-IH3" secondAttribute="centerX" id="k9B-G9-YEY"/>
+                            <constraint firstItem="lsb-vo-NRe" firstAttribute="trailing" secondItem="9It-Em-F0e" secondAttribute="trailing" constant="154" id="ec8-VZ-zFr"/>
                             <constraint firstItem="etQ-CV-5gE" firstAttribute="top" secondItem="37r-8i-IH3" secondAttribute="top" constant="388" id="r22-gX-EY0"/>
                         </constraints>
                     </view>
@@ -450,6 +740,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackBtn 70" width="100" height="70"/>
         <image name="GS_Logo" width="1458" height="1458"/>
+        <image name="aircraft 70" width="70" height="61"/>
+        <image name="antiAircraftWarfare 70" width="70" height="61"/>
+        <image name="apc 70" width="70" height="61"/>
+        <image name="cruiseMissiles 70" width="70" height="61"/>
+        <image name="drone 70" width="70" height="61"/>
+        <image name="fieldArttillery 70" width="70" height="61"/>
+        <image name="fuelTank 70" width="71" height="61"/>
+        <image name="helicopter 70" width="70" height="61"/>
+        <image name="militaryAuto 70" width="70" height="61"/>
+        <image name="mobileSRBMSystem 70" width="70" height="61"/>
+        <image name="mrl 70" width="70" height="61"/>
+        <image name="navalShip 70" width="70" height="61"/>
+        <image name="personnel 70" width="70" height="61"/>
+        <image name="specialEquipment 70" width="70" height="61"/>
+        <image name="tank 70" width="70" height="61"/>
+        <image name="vehiclesAndFuelTanks 70" width="70" height="61"/>
     </resources>
 </document>
