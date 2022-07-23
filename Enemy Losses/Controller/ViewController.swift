@@ -100,7 +100,12 @@ class ViewController: UIViewController {
             optionalPersonnelStr = ""
         }
         if let powCount = model.personal?.pow {
-            powStr = "POW: \(powCount)"
+            switch powCount {
+            case 0:
+                powStr = "\(powCount)"
+            default:
+                powStr = "+\(powCount)"
+            }
         } else {
             powStr = ""
         }
